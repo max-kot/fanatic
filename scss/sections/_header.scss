@@ -1,0 +1,49 @@
+.header {
+	padding: 57px 0;
+	position: absolute;
+	width: 100%;
+	z-index: 55;
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 100px;
+	}
+
+	&__logo {
+		& path {
+			transition: fill 0.3s;
+		}
+		&:hover path {
+			fill: #0093a1;
+		}
+	}
+
+	&__btn {
+		text-transform: uppercase;
+		font-family: "Comfortaa", sans-serif;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: calc(22px / 20px * 100%);
+		background: #262c27;
+		color: #fff;
+		padding: 12px;
+		min-width: 193px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.3s;
+		&:hover {
+			background: #b9c400;
+			color: #262c27;
+		}
+	}
+
+	&__phone {
+		font-family: "Comfortaa", sans-serif;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: calc(22px / 20px * 100%);
+		color: #262c27;
+	}
+}

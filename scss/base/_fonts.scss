@@ -1,0 +1,67 @@
+/*--- Comfortaa Font ---*/
+@font-face {
+	font-family: "Comfortaa";
+	src: url("../fonts/Comfortaa/Comfortaa-Regular.eot");
+	src: url("../fonts/Comfortaa/Comfortaa-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Comfortaa/Comfortaa-Regular.woff2") format("woff2"),
+		url("../fonts/Comfortaa/Comfortaa-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Comfortaa";
+	src: url("../fonts/Comfortaa/Comfortaa-Bold.eot");
+	src: url("../fonts/Comfortaa/Comfortaa-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Comfortaa/Comfortaa-Bold.woff2") format("woff2"),
+		url("../fonts/Comfortaa/Comfortaa-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/*--- Inter Font ---*/
+@font-face {
+	font-family: "Inter";
+	src: url("../fonts/Inter/Inter-Regular.eot");
+	src: url("../fonts/Inter/Inter-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Inter/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter/Inter-Regular.woff") format("woff"),
+		url("../fonts/Inter/Inter-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("../fonts/Inter/Inter-Bold.eot");
+	src: url("../fonts/Inter/Inter-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Inter/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter/Inter-Bold.woff") format("woff"),
+		url("../fonts/Inter/Inter-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("../fonts/Inter/Inter-ExtraBoldItalic.eot");
+	src: url("../fonts/Inter/Inter-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Inter/Inter-ExtraBoldItalic.woff2") format("woff2"),
+		url("../fonts/Inter/Inter-ExtraBoldItalic.woff") format("woff");
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("../fonts/Inter/Inter-LightItalic.eot");
+	src: url("../fonts/Inter/Inter-LightItalicA.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Inter/Inter-LightItalic.woff2") format("woff2"),
+		url("../fonts/Inter/Inter-LightItalic.woff") format("woff");
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
