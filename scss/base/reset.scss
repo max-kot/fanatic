@@ -50,11 +50,6 @@ p {
 	line-height: inherit;
 }
 
-p + p {
-	// любой абзац кроме первого
-	margin-top: 1em; //корректные отступы между абзацами
-}
-
 ul {
 	list-style: none;
 }

@@ -56,3 +56,36 @@ body {
 		object-fit: cover;
 	}
 }
+
+.btn {
+	&__icon {
+		& + * {
+			margin-top: 12px;
+		}
+	}
+
+	&__text {
+		display: block;
+		color: #fff;
+		transition: all 0.3s;
+	}
+	svg {
+		circle {
+			transition: all 0.3s;
+		}
+		path {
+			transition: all 0.3s;
+		}
+	}
+	&:hover span {
+		color: #b9c400;
+	}
+	&:hover svg {
+		circle {
+			stroke: #b9c400;
+		}
+		path {
+			fill: #b9c400;
+		}
+	}
+}

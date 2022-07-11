@@ -1,8 +1,19 @@
 .decoration {
-	background: url("../img/decoration/bg.png") center/cover no-repeat;
 	padding: 250px 0;
-	margin: -230px 0 0;
-
+	margin: -230px 0;
+	position: relative;
+	z-index: 1;
+	&::before {
+		content: "";
+		background: url("../img/decoration/bg.png") center/cover no-repeat;
+		right: 0;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 640px;
+		position: absolute;
+		z-index: 1;
+	}
 	&__body {
 		position: relative;
 		display: flex;
@@ -21,11 +32,11 @@
 			font-size: 130px;
 			line-height: calc(145px / 130px * 100%);
 			opacity: 0.3;
-			z-index: -1;
+			z-index: 0;
 		}
 		&:nth-child(2) {
 			position: absolute;
-			top: -150px;
+			top: -100px;
 			right: 70%;
 			transform: translateX(70%);
 			font-family: "Comfortaa", sans-serif;
@@ -33,6 +44,7 @@
 			font-size: 130px;
 			line-height: calc(145px / 130px * 100%);
 			opacity: 0.3;
+			z-index: 1;
 		}
 		&:nth-child(3) {
 			max-width: 359px;
@@ -43,6 +55,7 @@
 			line-height: calc(39px / 32px * 100%);
 			text-align: center;
 			margin-right: 135px;
+			z-index: 2;
 		}
 	}
 }
