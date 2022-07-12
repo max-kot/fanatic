@@ -1,0 +1,130 @@
+.buy {
+	padding: 150px 0;
+	background: #fff;
+	position: relative;
+	@media (max-width: 768px) {
+		padding: 50px 0;
+	}
+	&::after {
+		content: "";
+		background: url("../img/buy/decor.png") bottom/cover no-repeat;
+		position: absolute;
+		height: 323px;
+		bottom: -323px;
+		left: 0;
+		right: 0;
+		z-index: 2;
+	}
+	&__body {
+		display: flex;
+		align-items: center;
+		gap: 97px;
+		@media (max-width: 1200px) {
+			gap: unset;
+		}
+		@media (max-width: 1024px) {
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__content {
+		max-width: 502px;
+		position: relative;
+		@media (max-width: 768px) {
+			max-width: unset;
+			width: 100%;
+		}
+	}
+
+	&__title {
+		color: #0093a1;
+		& + * {
+			margin-top: 50px;
+		}
+	}
+
+	&__list {
+		margin-bottom: 50px;
+	}
+
+	&__price {
+		background: url("../img/buy/star.svg") center/cover no-repeat;
+		width: 201px;
+		height: 199px;
+		font-weight: 700;
+		font-size: 35px;
+		line-height: calc(42px / 35px * 100%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		right: 25px;
+		bottom: 130px;
+		transition: transform 0.3s;
+		&:hover {
+			transform: scale(1.25);
+		}
+		@media (max-width: 1200px) {
+			right: 0;
+		}
+		@media (max-width: 1024px) {
+			bottom: unset;
+			top: -30%;
+		}
+		@media (max-width: 425px) {
+			width: 101px;
+			height: 99px;
+			font-size: 18px;
+			top: -20%;
+		}
+	}
+
+	&__btn {
+		border: 2px solid #0093a1;
+		text-transform: uppercase;
+		color: #0093a1;
+		font-family: "Comfortaa", sans-serif;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: calc(45px / 40px * 100%);
+		padding: 18px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		transition: all 0.3s;
+		&:hover {
+			color: #262c27;
+			border-color: #b9c400;
+			background: #b9c400;
+		}
+	}
+
+	&__image {
+	}
+}
+
+.buy-list {
+	&__item {
+		max-width: 292px;
+		transition: color 0.3s;
+		& + * {
+			margin-top: 25px;
+		}
+		&:hover .buy-list__title {
+			color: #0093a1;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		text-transform: uppercase;
+		transition: color 0.3s;
+		& + * {
+			margin-top: 5px;
+		}
+	}
+
+	&__text {
+	}
+}

@@ -1,0 +1,155 @@
+.gallery {
+	&__top {
+		padding-top: 90vh;
+		padding-bottom: 85px;
+		background: url("../img/gallery/bg.png") center/cover no-repeat;
+	}
+
+	&__middle {
+		position: relative;
+		padding-bottom: 150px;
+	}
+
+	&__bottom {
+		padding-bottom: 150px;
+	}
+}
+.gallery-top {
+	position: relative;
+	&__btn {
+		position: absolute;
+		right: 37%;
+		top: 35%;
+	}
+
+	&__content {
+		max-width: 470px;
+	}
+
+	&__title {
+		& + * {
+			margin-top: 62px;
+		}
+	}
+
+	&__list {
+		list-style-position: inside;
+	}
+
+	&__item {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 24px;
+		& + * {
+			margin-top: 15px;
+		}
+	}
+
+	&__item-text {
+		display: inline-block;
+		margin-left: 29px;
+	}
+}
+.gallery-middle {
+	&__body {
+		display: flex;
+		gap: 68px;
+		align-items: center;
+	}
+	&__content {
+		max-width: 350px;
+	}
+
+	&__text {
+	}
+
+	&__grid {
+		margin-top: -245px;
+	}
+}
+.grid-small {
+	display: grid;
+	gap: 24px 30px;
+	grid-template-columns: 481px 208px;
+	grid-template-rows: 432px 299px;
+	padding: 72px 52px 32px;
+	border: 3px solid #262c27;
+	border-radius: 200px 0px 300px;
+	&__item {
+		overflow: hidden;
+		img {
+			object-fit: cover;
+		}
+	}
+
+	&__item--big {
+		grid-column: 1/-1;
+	}
+	&__item--border-top {
+		border-radius: 400px 0px 0px 0px;
+	}
+	&__item--border-bottom {
+		border-radius: 0px 0px 0px 300px;
+	}
+	&__item--behind {
+		z-index: -1;
+	}
+}
+.gallery-bottom {
+	&__grid {
+	}
+}
+.grid-big {
+	display: grid;
+	grid-template-columns: 300px 160px 289px 391px;
+	grid-template-rows: 340px 270px 270px;
+
+	gap: 20px;
+	&__item {
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__item--1 {
+		grid-column: 1/3;
+	}
+	&__item--2 {
+		grid-column: 3/-1;
+		border-radius: 0px 500px 0px 0px;
+	}
+	&__item--3 {
+		border-radius: 0px 0px 150px 0px;
+	}
+	&__item--4 {
+		grid-column: 2/4;
+		border-radius: 0px 200px 0px 0px;
+	}
+	&__item--5 {
+		border-radius: 200px 0px 0px 0px;
+	}
+	&__item--6 {
+		background: #0093a1;
+		border: 1px solid #0093a1;
+		border-radius: 0px 0px 0px 200px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__item--7 {
+		grid-column: 2/-1;
+		border-radius: 0px 0px 0px 400px;
+	}
+	&__text {
+		font-style: italic;
+		font-weight: 800;
+		font-size: 32px;
+		line-height: calc(39px / 32px * 100%);
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		max-width: 201px;
+	}
+}

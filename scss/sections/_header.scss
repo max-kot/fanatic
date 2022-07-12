@@ -3,11 +3,18 @@
 	position: absolute;
 	width: 100%;
 	z-index: 55;
+	@media (max-width: 768px) {
+		padding: 20px 0;
+	}
 	&__body {
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
 		gap: 100px;
+		@media (max-width: 768px) {
+			flex-direction: column;
+			gap: 15px;
+		}
 	}
 
 	&__logo {
@@ -44,6 +51,17 @@
 		font-weight: 700;
 		font-size: 20px;
 		line-height: calc(22px / 20px * 100%);
-		color: #262c27;
+		color: #fff;
+		background: #262c27;
+		padding: 12px;
+		min-width: 193px;
+		transition: all 0.3s;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			background: #b9c400;
+			color: #262c27;
+		}
 	}
 }

@@ -1,0 +1,120 @@
+.footer {
+	padding: 88px 0 83px;
+	background: #262c27;
+	color: #fff;
+	&__body {
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		& + * {
+			margin-top: 97px;
+		}
+	}
+
+	&__logo {
+		order: 2;
+		& path {
+			transition: fill 0.3s;
+		}
+		&:hover path {
+			fill: #0093a1;
+		}
+	}
+
+	&__form {
+	}
+
+	&__middle {
+		& + * {
+			margin-top: 48px;
+		}
+	}
+
+	&__bottom {
+	}
+}
+.footer-form {
+	max-width: 500px;
+	&__title {
+		& + * {
+			margin-top: 38px;
+		}
+	}
+
+	&__input {
+		background: transparent;
+		padding: 10px 0;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+		font-weight: 700;
+		color: rgba(255, 255, 255, 0.5);
+		display: block;
+		width: 100%;
+		& + * {
+			margin-top: 67px;
+		}
+	}
+
+	&__input-name {
+	}
+
+	&__input-email {
+	}
+
+	&__btn {
+		background: #fff;
+		color: #000;
+		font-family: "Comfortaa", sans-serif;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: calc(22px / 20px * 100%);
+		text-transform: uppercase;
+		padding: 10px;
+		min-width: 193px;
+		transition: all 0.3s;
+		&:hover {
+			background: #b9c400;
+		}
+	}
+}
+.footer-middle {
+	&__title {
+		font-weight: 700;
+		text-transform: uppercase;
+		& + * {
+			margin-top: 28px;
+		}
+	}
+
+	&__gallery {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 52px;
+	}
+}
+.footer-gallery {
+	&__item {
+	}
+}
+.footer-bottom {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		transition: color 0.3s;
+		& + * {
+			margin-left: 25px;
+		}
+		&:hover {
+			color: #0093a1;
+		}
+	}
+
+	&__link {
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}

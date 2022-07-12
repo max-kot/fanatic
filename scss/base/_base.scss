@@ -89,3 +89,14 @@ body {
 		}
 	}
 }
+.title {
+	text-transform: uppercase;
+	font-family: "Comfortaa", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: calc(67px / 60px * 100%);
+	@media (max-width: 768px) {
+		font-size: 40px;
+	}
+}
